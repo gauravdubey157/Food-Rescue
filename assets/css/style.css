@@ -13,7 +13,6 @@ body
 	overflow-x: hidden;
 }
 
-
 header
 {
 	background-color: var(--theme-color);
@@ -96,7 +95,6 @@ header .navbar-toggler:focus
 	background-color: #000000;
 	cursor: pointer;
 }
-
 
 .form-date-input
 {

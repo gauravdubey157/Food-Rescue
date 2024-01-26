@@ -12,7 +12,6 @@ window.setTimeout(() => {
 	}
 }, 5000);
 
-
 let btn = document.querySelector("#sidebar-toggler-btn");
 if(btn) {
 	btn.addEventListener("click", () => {

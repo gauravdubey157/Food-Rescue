@@ -6,7 +6,6 @@ const passport = require("passport");
 const middleware = require("../middleware/index.js")
 
 
-
 router.get("/auth/signup", middleware.ensureNotLoggedIn, (req,res) => {
 	res.render("auth/signup", { title: "User Signup" });
 });

@@ -15,7 +15,6 @@ require("dotenv").config();
 require("./config/dbConnection.js")();
 require("./config/passport.js")(passport);
 
-
 app.set("view engine", "ejs");
 app.use(expressLayouts);
 app.use("/assets", express.static(__dirname + "/assets"));
@@ -38,8 +37,6 @@ app.use((req, res, next) => {
 	next();
 });
 
-
-
 // Routes
 app.use(homeRoutes);
 app.use(authRoutes);
@@ -49,7 +46,6 @@ app.use(agentRoutes);
 app.use((req,res) => {
 	res.status(404).render("404page", { title: "Page not found" });
 });
-
 
 const port = process.env.PORT || 5000;
 app.listen(port, console.log(`Server is running at http://localhost:${port}`));
